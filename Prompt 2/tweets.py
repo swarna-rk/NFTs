@@ -30,7 +30,7 @@ def get_model_tokenizer():
 #Fetch tweets using Tweepy (search_recent_tweets). Limitation of this method - retrieves tweets from last 7 days
 #Form a dataframe with user details, tweet info and tweet created datetime
 def fetchtweetsandsave(search_string):
-    client = tweepy.Client(bearer_token='AAAAAAAAAAAAAAAAAAAAAK%2F9eQEAAAAAMqZNqq9hdHlfUIWeyE917BpTbnY%3Dg6Z1cpcY5nXbOS9T7C76Cidb7jfjgHamP6Oa725Vroq79H0gSA', wait_on_rate_limit=True)
+    client = tweepy.Client(bearer_token='dd', wait_on_rate_limit=True)
     minority_tweets = []
     paginator = tweepy.Paginator(client.search_recent_tweets, 
                                     query = '#minority -is:retweet lang:en',
