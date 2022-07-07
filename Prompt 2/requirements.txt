@@ -1,9 +1,0 @@
-streamlit
-pandas
-tweepy
-time
-transformers
-scipy.special
-numpy
-urllib.request
-csv
